@@ -21,4 +21,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\User\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Swagger\" />
+  </ItemGroup>
+
 </Project>
