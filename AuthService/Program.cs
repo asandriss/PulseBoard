@@ -1,4 +1,5 @@
 using AuthService.Data;
+using AuthService.Extensions;
 using AuthService.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -35,7 +36,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Enable Identity API
-app.MapIdentityApi<User>();
+app.CustomMapIdentityApi<User>();
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
